@@ -1,0 +1,42 @@
+
+                <!--    <div class="swiper main_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="aladin-photos/main-ad-1.jpg" alt="">
+                            <div class="text">
+                                <h4>이 세계에서 여자로 산다는 것</h4>
+                                <p>여자에 관하여</p>
+                            </div><!-- .text end -->
+            </div><!-- .swiper-slide end -->
+            <div class="swiper-slide">
+                <img src="aladin-photos/main-ad-2.jpg" alt="">
+                <div class="text">
+                    <h4>"내 소설의 독자가 날 위협하기 시작했다..."</h4>
+                    <p>살인 편지</p>
+                </div><!-- .text end -->
+            </div><!-- .swiper-slide end -->
+            <div class="swiper-slide">
+                <img src="aladin-photos/main-ad-3.jpg" alt="">
+                <div class="text">
+                    <h4>오늘도 이불 밖으로 나와<br>애쓰는 모든 어른들에게</h4>
+                    <p>어른이지만, 용기가 필요해</p>
+                </div><!-- .text end -->
+            </div><!-- .swiper-slide end -->
+            <div class="swiper-slide">
+                <img src="aladin-photos/main-ad-4.jpg" alt="">
+                <div class="text">
+                    <h4>실종된 미스터리 작가가 남긴 <br> 최후의 수수께끼</h4>
+                    <p>내 시체를 찾아 주세요</p>
+                </div><!-- .text end -->
+            </div><!-- .swiper-slide end -->
+            <div class="swiper-slide">
+                <img src="aladin-photos/main-ad-5.jpg" alt="">
+                <div class="text">
+                    <h4>불멸의 힘을 지닌 '타이거'와 <br> 세상을 구해라</h4>
+                    <p>타이거</p>
+                </div><!-- .text end -->
+            </div><!-- .swiper-slide end -->
+            <div class="swiper-pagination"></div>
+            </div><!-- .swiper-wrapper end -->
+
+            </div><!-- .swiper main_slide end --> -->
