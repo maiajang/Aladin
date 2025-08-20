@@ -5,168 +5,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aladin_renewal</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         window.onload = () => {
-            var swiper = new Swiper(".main_slide", {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
+            const container = document.querySelector('.container');
+            const prev = document.querySelector('.prev')
+            const next = document.querySelector('.next')
+
+            prev.addEventListener('click', () => {
+                const slides = document.querySelectorAll('.slide')
+
+                container.append(slides[0])
             });
-        }
+
+            next.addEventListener('click', () => {
+                const slides = document.querySelectorAll('.slide')
+
+                container.prepend(slides[slides.length - 1])
+            });
+
+        };
     </script>
 </head>
 
 <body>
-    <header class="top-ad">
-        <div class="content">
-            <img class="img-left" src="aladin-photos/top-ad-left.jpg" alt="">
-            <h3>8월 특별 선물</h3>
-            <p>피크닉 테이블 · 광복 80주년 에디션</p>
-            <img class="img-right" src="aladin-photos/top-ad-right.jpg" alt="">
-        </div><!-- .content end -->
-        <img src="aladin-photos/exit.png" alt="">
-    </header><!-- .top-ad end -->
-    <header class="top-icons">
-        <div class="icons">
-            <a href="#"><img src="aladin-photos/login.png"></a>
-            <p>로그인</p>
-        </div><!-- .icons end -->
-        <div class="icons">
-            <a href="#"><img src="aladin-photos/cart.png"></a>
-            <p>장바구니</p>
-        </div><!-- .icons end -->
-        <div class="icons">
-            <a href="#"><img src="aladin-photos/fav.png"></a>
-            <p>찜</p>
-        </div><!-- .icons end -->
-    </header><!-- .top-icons end -->
-
-    <nav class="nav">
-        <a href="#"><img src="aladin-photos/aladin_logo.png" alt=""></a>
-        <div class="search-bar">
-            <div class="search-bar-2">
-                <div class="text">
-                    <h4>통합검색</h4>
-                    <img src="aladin-photos/arrowdown.png" alt="">
-                    <img src="aladin-photos/vertical-bar-gray.png" alt="">
-                    <p>부동의 1등 초등세계사</p>
-                </div><!-- .text end -->
-                <img class="mag" src="aladin-photos/magnifier.png" alt="">
-            </div><!-- .search-bar-2 end -->
-            <div class="detail">
-                <p>상세검색</p>
-                <img src="aladin-photos/tri-right.png" alt="">
-            </div><!-- .detail end -->
-        </div><!-- .search-bar end -->
-        <div class="top-right-ad-book">
-            <div class="image">
-                <a href="#"><img src="aladin-photos/top-right-ad-book.png" alt=""></a>
-            </div><!-- .image end -->
+    <header class="header">
+        <div class="top-ad">
             <div class="content">
-                <h5>AD</h5>
-                <p>너무 늦은 시간</p>
-                <p>「이처럼 사소한 것들」<br> &nbsp; &nbsp; 클레어 키건 신작</p>
-                <img src="aladin-photos/arrowleft.png" alt="">
-                <img src="aladin-photos/arrowright.png" alt="">
+                <img class="img-left" src="aladin-photos/top-ad-left.jpg" alt="">
+                <h3>8월 특별 선물</h3>
+                <p>피크닉 테이블 · 광복 80주년 에디션</p>
+                <img class="img-right" src="aladin-photos/top-ad-right.jpg" alt="">
             </div><!-- .content end -->
-        </div>
-    </nav><!-- .nav end -->
-    <nav class="menu-bar">
-        <img src="aladin-photos/menubar.png" alt="">
-        <ul class="menu-left">
-            <li>국내 서적</li>
-            <li>전자책</li>
-            <li>추천 마법사</li>
-            <li>책 팔기</li>
-            <li>매장 찾기</li>
-            <li>매입가 조회</li>
-            <li>알라딘 US</li>
-        </ul><!-- .menu-left end -->
-        <ul class="menu-right">
-            <li>만권당</li>
-            <li>알라딘 굿즈</li>
-            <li>온라인 중고</li>
-            <li>커피</li>
-            <li>음반/블루레이</li>
-        </ul><!-- .menu-right end -->
-    </nav><!-- .menu-bar end -->
+            <img src="aladin-photos/exit.png" alt="">
+        </div><!-- .top-ad end -->
+        <div class="top-icons">
+            <div class="icons">
+                <a href="#"><img src="aladin-photos/login.png"></a>
+                <p>로그인</p>
+            </div><!-- .icons end -->
+            <div class="icons">
+                <a href="#"><img src="aladin-photos/cart.png"></a>
+                <p>장바구니</p>
+            </div><!-- .icons end -->
+            <div class="icons">
+                <a href="#"><img src="aladin-photos/fav.png"></a>
+                <p>찜</p>
+            </div><!-- .icons end -->
+        </div><!-- .top-icons end -->
+        <nav class="nav">
+            <a href="#"><img src="aladin-photos/aladin_logo.png" alt=""></a>
+            <div class="search-bar">
+                <div class="search-bar-2">
+                    <div class="text">
+                        <h4>통합검색</h4>
+                        <img src="aladin-photos/arrowdown.png" alt="">
+                        <img src="aladin-photos/vertical-bar-gray.png" alt="">
+                        <p>부동의 1등 초등세계사</p>
+                    </div><!-- .text end -->
+                    <img class="mag" src="aladin-photos/magnifier.png" alt="">
+                </div><!-- .search-bar-2 end -->
+                <div class="detail">
+                    <p>상세검색</p>
+                    <img src="aladin-photos/tri-right.png" alt="">
+                </div><!-- .detail end -->
+            </div><!-- .search-bar end -->
+            <div class="top-right-ad-book">
+                <div class="image">
+                    <a href="#"><img src="aladin-photos/top-right-ad-book.png" alt=""></a>
+                </div><!-- .image end -->
+                <div class="content">
+                    <h5>AD</h5>
+                    <p>너무 늦은 시간</p>
+                    <p>「이처럼 사소한 것들」<br> 클레어 키건 신작</p>
+                    <div class="arrow">
+                        <img src="aladin-photos/arrowleft.png" alt="">
+                        <img src="aladin-photos/arrowright.png" alt="">
+                    </div><!-- .arrow end -->
+                </div><!-- .content end -->
+            </div>
+        </nav><!-- .nav end -->
+        <nav class="menu-bar">
+            <img src="aladin-photos/menubar.png" alt="">
+            <ul class="menu-left">
+                <li>국내 서적</li>
+                <li>전자책</li>
+                <li>추천 마법사</li>
+                <li>책 팔기</li>
+                <li>매장 찾기</li>
+                <li>매입가 조회</li>
+                <li>알라딘 US</li>
+            </ul><!-- .menu-left end -->
+            <ul class="menu-right">
+                <li>만권당</li>
+                <li>알라딘 굿즈</li>
+                <li>온라인 중고</li>
+                <li>커피</li>
+                <li>음반/블루레이</li>
+            </ul><!-- .menu-right end -->
+        </nav><!-- .menu-bar end -->
+    </header><!-- .header end -->
+
     <main class="main">
         <section class="section-01">
-            <div class="main_visual">
-                <ul class="title_tag">
-                    <li>이주의 책</li>
-                    <li>눈에 띄는 새책</li>
-                    <li>편집장의 선택</li>
-                    <li>지금 펀딩중</li>
-                    <li>eBook</li>
-                </ul><!-- .title_tag end -->
-                <hr>
-                <div class="swiper main_slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="aladin-photos/main-ad-1.jpg" alt="">
-                            <div class="text">
-                                <h4>이 세계에서 여자로 산다는 것</h4>
-                                <p>여자에 관하여</p>
-                            </div><!-- .text end -->
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="aladin-photos/main-ad-2.jpg" alt="">
-                            <div class="text">
-                                <h4>"내 소설의 독자가 날 위협하기 시작했다..."</h4>
-                                <p>살인 편지</p>
-                            </div><!-- .text end -->
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="aladin-photos/main-ad-3.jpg" alt="">
-                            <div class="text">
-                                <h4>오늘도 이불 밖으로 나와<br>애쓰는 모든 어른들에게</h4>
-                                <p>어른이지만, 용기가 필요해</p>
-                            </div><!-- .text end -->
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="aladin-photos/main-ad-4.jpg" alt="">
-                            <div class="text">
-                                <h4>실종된 미스터리 작가가 남긴 <br> 최후의 수수께끼</h4>
-                                <p>내 시체를 찾아 주세요</p>
-                            </div><!-- .text end -->
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="aladin-photos/main-ad-5.jpg" alt="">
-                            <div class="text">
-                                <h4>불멸의 힘을 지닌 '타이거'와 <br> 세상을 구해라</h4>
-                                <p>타이거</p>
-                            </div><!-- .text end -->
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-pagination"></div>
-                    </div><!-- .swiper-wrapper end -->
-
+            <ul class="title_tag">
+                <li>이주의 책</li>
+                <li>눈에 띄는 새책</li>
+                <li>편집장의 선택</li>
+                <li>지금 펀딩중</li>
+                <li>eBook</li>
+            </ul><!-- .title_tag end -->
+            <hr>
+            <div class="container">
+                <div class='slide'>
+                    <img src="aladin-photos/main-ad-1.jpg" alt="">
                 </div>
-            </div><!-- .main_visual end -->
+                <div class='slide'>
+                    <img src="aladin-photos/main-ad-2.jpg" alt="">
+                </div>
+                <div class='slide'>
+                    <img src="aladin-photos/main-ad-3.jpg" alt="">
+                </div>
+                <div class='slide'>
+                    <img src="aladin-photos/main-ad-4.jpg" alt="">
+                </div>
+                <div class='slide'>
+                    <img src="aladin-photos/main-ad-5.jpg" alt="">
+                </div>
+                <div class='slide'>
+                    <img src="aladin-photos/main-ad-2.jpg" alt="">
+                </div>
+                <div class='slide'>
+                    <img src="aladin-photos/main-ad-3.jpg" alt="">
+                </div>
+            </div>
 
-            <div class="side_ad">
-                <div class="ad_img">
-                    <img src="aladin-photos/top-right-ad-cup.jpg" alt="">
-                    <p>특별<br>선물</p>
-                </div><!-- .ad_img -->
-                <div class="ad_text">
-                    <h4>대상도서 <br> 1만 원 이상 구매 시 <br>사은품 선택 가능</h4>
-                    <h5>(마일리지 차감)</h5>
-                    <h4>대상도서 모두 보기</h4>
-                    <div class="page_number">
-                        <img src="aladin-photos/arrowleft.png" alt="">
-                        <p> 1/3 </p>
-                        <img src="aladin-photos/arrowright.png" alt="">
-                    </div><!-- .page_number end -->
-                </div><!-- .ad_text end -->
-            </div><!-- .side ad end -->
+            <div class='buttons'>
+                <button class='prev'>
+                    <img src="aladin-photos/arrowleft.png" alt="">
+                </button>
+                <button class='next'>
+                    <img src="aladin-photos/arrowright.png" alt="">
+                </button>
+            </div>
         </section><!-- .section-01 end -->
+
+        <div class="side_ad">
+            <div class="ad_img">
+                <img src="aladin-photos/top-right-ad-cup.jpg" alt="">
+                <p>특별<br>선물</p>
+            </div><!-- .ad_img -->
+            <div class="ad_text">
+                <h4>대상도서 <br> 1만 원 이상 구매 시 <br>사은품 선택 가능</h4>
+                <h5>(마일리지 차감)</h5>
+                <h4>대상도서 모두 보기</h4>
+                <div class="page_number">
+                    <img src="aladin-photos/arrowleft.png" alt="">
+                    <p> 1/3 </p>
+                    <img src="aladin-photos/arrowright.png" alt="">
+                </div><!-- .page_number end -->
+            </div><!-- .ad_text end -->
+        </div><!-- .side ad end -->
+
         <section class="section-02">
             <div class="icon">
                 <a href="#"><img src="aladin-photos/new-book-icon.png" alt=""></a>
@@ -499,8 +500,8 @@
             </div><!-- .right end -->
         </section><!-- .sec-02 -->
     </footer><!-- .footer end -->
-<div class="position">
-    
+    <div class="position">
+
         <div class="popup_ad">
             <div class="content">
                 <div class="text">
@@ -514,11 +515,11 @@
                 <img src="aladin-photos/pop-up-ad.jpg" alt="">
                 <img src="aladin-photos/pop-up-ad.jpg" alt="">
                 <img src="aladin-photos/pop-up-ad.jpg" alt="">
-    
-    
+
+
             </div><!-- .book end -->
         </div><!-- .popup_ad end -->
-</div><!-- .position end -->
+    </div><!-- .position end -->
 </body>
 
 </html>

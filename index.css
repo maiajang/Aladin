@@ -1,5 +1,113 @@
       @charset "utf-8";
 
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-Black.eot');
+          src: url('../font/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-Black.woff2') format('woff2'),
+              url('../font/Pretendard-Black.woff') format('woff');
+          font-weight: 900;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-ExtraBold.eot');
+          src: url('../font/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-ExtraBold.woff2') format('woff2'),
+              url('../font/Pretendard-ExtraBold.woff') format('woff');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-Bold.eot');
+          src: url('../font/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-Bold.woff2') format('woff2'),
+              url('../font/Pretendard-Bold.woff') format('woff');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-ExtraLight.eot');
+          src: url('../font/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-ExtraLight.woff2') format('woff2'),
+              url('../font/Pretendard-ExtraLight.woff') format('woff');
+          font-weight: 200;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-Medium.eot');
+          src: url('../font/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-Medium.woff2') format('woff2'),
+              url('../font/Pretendard-Medium.woff') format('woff');
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-Light.eot');
+          src: url('../font/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-Light.woff2') format('woff2'),
+              url('../font/Pretendard-Light.woff') format('woff');
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-Regular.eot');
+          src: url('../font/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-Regular.woff2') format('woff2'),
+              url('../font/Pretendard-Regular.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-SemiBold.eot');
+          src: url('../font/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-SemiBold.woff2') format('woff2'),
+              url('../font/Pretendard-SemiBold.woff') format('woff');
+          font-weight: 600;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: 'Pretendard';
+          src: url('../font/Pretendard-Thin.eot');
+          src: url('../font/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+              url('../font/Pretendard-Thin.woff2') format('woff2'),
+              url('../font/Pretendard-Thin.woff') format('woff');
+          font-weight: 100;
+          font-style: normal;
+          font-display: swap;
+      }
+
+
+      body {
+          width: 100%;
+          height: 100vh;
+          font-family: Pretendard;
+          font-weight: 400;
+          color: #333333;
+      }
+
       * {
           margin: 0;
           padding: 0;
@@ -15,64 +123,72 @@
           color: inherit;
       }
 
+      .header {
+          width: 100%;
+      }
 
-
-      .top-ad {
+      .header .top-ad {
           width: 100%;
           height: 70px;
           background-color: #4B5BA8;
           align-items: center;
           display: flex;
-          justify-content: center;
+
+
       }
 
-      .top-ad .content {
+      .header .top-ad .content {
+          margin: 0 auto;
           display: flex;
           align-items: center;
-          gap: 10px;
-          margin: 0 auto;
+          justify-content: center;
+          gap: 30px;
+
+
       }
 
-      .top-ad imag {
+      .header .top-ad img {
           border-radius: 50%;
           background-color: white;
-          margin-right: 50px;
+          object-fit: cover;
       }
 
-      .top-ad .content img:nth-child(1) {
+      .header .top-ad .content img:nth-child(1) {
           width: 115px;
           height: 40px;
-          object-fit: cover;
+
           border-radius: 50px;
       }
 
-      .top-ad .content h3,
-      .top-ad .content p {
+      .header .top-ad .content h3,
+      .header .top-ad .content p {
           color: white;
           margin: 0;
       }
 
-      .top-ad .content img:nth-child(4) {
+      .header .top-ad .content img:nth-child(4) {
           width: 40px;
           height: 40px;
           border-radius: 50%;
-          object-fit: cover;
+
       }
 
-      .top-icons {
-          width: 1200px;
+      .header .top-icons {
           display: flex;
           align-items: center;
           justify-content: flex-end;
-          column-gap: 5px;
+          column-gap: 20px;
+          width: 1200px;
+          margin: 0 auto;
+          padding: 10px 0;
       }
 
-      .top-icons .icons {
-          margin-left: auto;
-          width: 45px;
-          height: 45px;
 
-          margin: 0px auto;
+      .header .top-icons .icons {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 12px;
       }
 
       .top-icons img {
@@ -85,11 +201,6 @@
       .top-icons .icons p {
           font-size: 12px;
           text-align: center;
-      }
-
-      .top-icons .icons:nth-child(3) a img {
-          display: block;
-          margin-bottom: 10px;
       }
 
       .nav {
@@ -140,40 +251,50 @@
       .nav .top-right-ad-book {
           width: 250px;
           display: flex;
+          justify-content: flex-end;
           align-items: center;
-          column-gap: 10px;
+          gap: 10px;
       }
 
-      .nav .top-right-ad-book a img {
+      .nav .top-right-ad-book .image a img {
+          display: block;
           width: 62px;
           height: 90px;
+          object-fit: unset;
       }
+
+      .nav .top-right-ad-book .content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+      }
+
 
       .nav .top-right-ad-book .content h5 {
           width: 30px;
           font-size: 12px;
           color: #33333388;
           border: 2px solid #33333388;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
           text-align: center;
           background-color: #33333315;
+      }
+
+      .nav .top-right-ad-book .content p {
+          align-self: flex-start;
       }
 
       .nav .top-right-ad-book .content p:nth-child(2) {
           font-size: 14px;
           color: #333333bb;
           font-weight: bold;
-          margin-left: 5px;
+
       }
 
       .nav .top-right-ad-book .content p:nth-child(3) {
           font-size: 12px;
       }
 
-      .nav .top-right-ad-book .content img:nth-child(4),
-      .nav .top-right-ad-book .content img:nth-child(5) {
+      .nav .top-right-ad-book .content .arrow img {
           width: 20px;
           height: 20px;
           border-radius: 50%;
@@ -192,9 +313,16 @@
 
       .menu-bar ul {
           display: flex;
-          column-gap: 10px;
+          justify-content: flex-start;
+          column-gap: 5px;
+      
       }
-
+      .menu-bar ul li {
+        font-size: 14px;
+        border: 1px solid #33333333;
+        border-radius: 20px;
+        padding: 5px 10px;
+      }
       .menu-bar .menu-right li {
           font-size: 16px;
           color: white;
@@ -203,43 +331,114 @@
           padding: 5px 15px;
       }
 
-      .main .section-01 {
+
+      .main {
           width: 1200px;
           margin: 0 auto;
-          display: flex;
-          column-gap: 20px;
-
       }
 
-      .main .section-01 .main_visual {
+      .main .section-01 {
           width: 100%;
-          margin: 0 auto;
-          height: 536px;
-          border: 1px solid #33333315;
+          height: 750px;
+          border: 1px solid #33333333;
           border-radius: 10px;
-          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          position: relative;
       }
 
-      .main .section-01 .main_visual .title_tag {
-          width: 60%;
+      .main .section-01 .title_tag {
+          width: 70%;
+          margin: 40px auto;
           display: flex;
           justify-content: space-between;
+
+      }
+
+      .main .section-01 hr {
+          width: 80%;
           margin: 0 auto;
-          font-size: 18px;
-          font-weight: bold;
       }
 
-      hr {
-          margin: 20px auto 40px auto;
-          width: 60%
+      .container {
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          perspective: 500px;
+          transform-style: preserve-3d;
+
       }
 
-      .main .section-01 .main_visual .swiper.main_slide .swiper-wrapper .swiper-slide img {
-          width: 140px;
-          height: 200px;
+      .slide {
+          transition: 0.5s;
+          width: 190px;
+          box-shadow: 0 10px 50px gray;
+          height: 280px;
+          background: white;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          transform: translate(-50%, -50%)
       }
 
-      .main .section-01 .side_ad {
+      .slide img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+
+      .slide:nth-of-type(1),
+      .slide:nth-of-type(2) {
+          transform: translate(calc(-50%*5.1), -50%) translateZ(-100px);
+      }
+
+      .slide:nth-of-type(3) {
+          transform: translate(calc(-50%*3.1), -50%) translateZ(-50px);
+      }
+
+      .slide:nth-of-type(4) {
+          transform: translate(calc(-50%*1.1), -50%) translateZ(50px);
+      }
+
+      .slide:nth-of-type(5) {
+          transform: translate(calc(-50%*-0.9), -50%) translateZ(-50px);
+      }
+
+      .slide:nth-of-type(6),
+      .slide:nth-of-type(7) {
+          transform: translate(calc(-50%*-2.9), -50%) translateZ(-100px);
+      }
+
+
+      /*버튼 */
+      .buttons {
+          position: absolute;
+          z-index: 1;
+          bottom: 3em;
+          left: 50%;
+          transform: translate(-50%);
+          display: flex;
+          gap: 50px;
+      }
+
+      .buttons button {
+        width: 60px;
+        height: 60px;
+        border: 2px solid #333333bb;
+        border-radius: 50%;
+        background-color: transparent;
+        
+        
+      
+
+
+      }
+      .buttons button img {
+        object-fit: cover;
+      }
+
+      .main .side_ad {
           width: 180px;
           height: 400px;
           border: 1px solid #33333315;
@@ -251,14 +450,14 @@
           z-index: 5;
       }
 
-      .main .section-01 .side_ad .ad_img img {
+      .main .side_ad .ad_img img {
           width: 100%;
           height: 150px;
           object-fit: unset;
           border-radius: 10px;
       }
 
-      .main .section-01 .side_ad .ad_img p {
+      .main .side_ad .ad_img p {
           width: 45px;
           height: 40px;
           font-size: 12px;
@@ -274,7 +473,7 @@
           padding: 2px;
       }
 
-      .main .section-01 .side_ad .ad_text {
+      .main .side_ad .ad_text {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -283,16 +482,16 @@
           padding: 5px;
       }
 
-      .main .section-01 .side_ad .ad_text h4:first-child {
+      .main .side_ad .ad_text h4:first-child {
           font-size: 16px;
       }
 
-      .main .section-01 .side_ad .ad_text h5 {
+      .main .side_ad .ad_text h5 {
           font-size: 14px;
           color: #33333388;
       }
 
-      .main .section-01 .side_ad .ad_text h4:nth-child(3) {
+      .main .side_ad .ad_text h4:nth-child(3) {
           font-size: 16px;
           border-radius: 10px;
           color: white;
@@ -301,19 +500,19 @@
           padding: 15px;
       }
 
-      .main .section-01 .side_ad .ad_text .page_number {
+      .main .side_ad .ad_text .page_number {
           margin-top: 20px;
           display: flex;
           align-items: center;
           column-gap: 5px;
       }
 
-      .main .section-01 .side_ad .ad_text .page_number img {
+      .main .side_ad .ad_text .page_number img {
           width: 4px;
           height: 9px;
       }
 
-      .main .section-01 .side_ad .ad_text .page_number p {
+      .main .side_ad .ad_text .page_number p {
           font-size: 12px;
           color: #33333388
       }
@@ -810,26 +1009,29 @@
           justify-content: space-between;
           color: white;
           position: relative;
-        }
-        .popup_ad .content .text h4{
-            font-size: 18px;
-        }
-        .popup_ad .content .text .ex{
-            font-size: 14px;
-            font-weight: bold;
-            color: rgba(255, 255, 255, 0.623);
+      }
 
-        }
-        .popup_ad .content .text .ad{
-            font-size: 10px;
-            background-color: #33333333;
-            border-radius: 10px;
-            width: 25px;
-            height: 20px;
-            text-align: center;
-            
-        }
-        
+      .popup_ad .content .text h4 {
+          font-size: 18px;
+      }
+
+      .popup_ad .content .text .ex {
+          font-size: 14px;
+          font-weight: bold;
+          color: rgba(255, 255, 255, 0.623);
+
+      }
+
+      .popup_ad .content .text .ad {
+          font-size: 10px;
+          background-color: #33333333;
+          border-radius: 10px;
+          width: 25px;
+          height: 20px;
+          text-align: center;
+
+      }
+
       .popup_ad .book img {
           width: 120px;
           height: 190px;
