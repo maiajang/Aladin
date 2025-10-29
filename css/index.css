@@ -101,7 +101,8 @@
 
 
       body {
-          width: 100%;
+          min-width: 1400px;
+          margin: 0 auto;
           height: 100vh;
           font-family: Pretendard;
           font-weight: 400;
@@ -991,7 +992,7 @@
       }
 
       .popup_ad {
-          width: 100%;
+          min-width: 1400px;
           height: 120px;
           border-radius: 20px 20px 0 0;
           background-color: #4B8B6B;
@@ -999,6 +1000,8 @@
           z-index: 9999;
           padding: 20px 300px;
           bottom: 0px;
+          left: 50%;
+          transform: translateX(-50%);
 
       }
 
@@ -1056,4 +1059,5 @@
       .popup_ad .book img:nth-child(3) {
           left: 66%;
           bottom: -130px;
+
       }
