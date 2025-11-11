@@ -1045,19 +1045,20 @@
       .popup_ad .book img:first-child {
           width: 160px;
           height: 220px;
-          left: 50%;
-          bottom: -20px;
+        right: 484px;
+    bottom: 27px;
 
       }
 
       .popup_ad .book img:nth-child(2) {
-          left: 60%;
-          bottom: 60px;
+     right: 329px;
+    bottom: 60px;
 
       }
 
       .popup_ad .book img:nth-child(3) {
-          left: 66%;
-          bottom: -130px;
+          right: 220px;
+    bottom: -130px;
 
       }
+
